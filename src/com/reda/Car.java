@@ -18,10 +18,13 @@ public class Car {
     //main function
     public static void main(String[] args) {
         //declar new car
-        Car c = new Car("pink");
-        System.out.println("Car color is : "+c.getColor()+"\n");
-        setColor(c);
-        System.out.println("Car color is : "+c.getColor()+"\n");
+       // Car c = new Car("pink");
+        //System.out.println("Car color is : "+c.getColor()+"\n");
+        //setColor(c);
+        //System.out.println("Car color is : "+c.getColor()+"\n");
+        int number = 234;
+        System.out.println(number/10);
+
     }
 
     //set new color
