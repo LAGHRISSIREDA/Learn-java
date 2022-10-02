@@ -1,10 +1,13 @@
 package com.codesigne;
 
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         //declaration
 //        Car c = new Car();
 //        System.out.println(c.model);
@@ -43,26 +46,45 @@ public class Main {
 //        }
 
 //        ************************************* catch exception***********************
-        Scanner scan = new Scanner(System.in);
+//        Scanner scan = new Scanner(System.in);
+//
+//       try{
+//           System.out.println("Enter number : ");
+//           int number1 = scan.nextInt();
+//           System.out.println("Enter other number : ");
+//           int number2 = scan.nextInt();
+//           int result = number1/number2;
+//           System.out.println("The result is : "+result);
+//
+//       }catch(ArithmeticException e){
+//           System.out.println("You can't devide by Zero !!! Idiot");
+//       }catch (InputMismatchException e){
+//           System.out.println("Please enter two numbers");
+//       }catch (Exception e){
+//           System.out.println("Something went Wrong");
+//       }finally {
+//           scan.close();
+//       }
 
-       try{
-           System.out.println("Enter number : ");
-           int number1 = scan.nextInt();
-           System.out.println("Enter other number : ");
-           int number2 = scan.nextInt();
-           int result = number1/number2;
-           System.out.println("The result is : "+result);
-
-       }catch(ArithmeticException e){
-           System.out.println("You can't devide by Zero !!! Idiot");
-       }catch (InputMismatchException e){
-           System.out.println("Please enter two numbers");
-       }catch (Exception e){
-           System.out.println("Something went Wrong");
-       }finally {
-           System.out.println("this will always print");
-       }
-
+//       ************************************************ File practice *******************************
+//        File file = new File("secret_message.txt");
+//        if(file.exists()){
+//            System.out.println("That file existes ! :o!");
+//            System.out.println(file.getAbsoluteFile());
+//            System.out.println(file.getPath());
+//            System.out.println(file.isFile());
+//
+//        }else{
+//            System.out.println("That file doesn't exist :(");
+//        }
+        try{
+            FileWriter writer = new FileWriter("poem.txt");
+            writer.write("Roses are red\nViolets are blue \nBooty booty boot");
+            writer.append("\nadd new ine to the peom");
+            writer.close();
+        }catch(IOException e){
+            e.printStackTrace();
+        }
 
     }
 }
