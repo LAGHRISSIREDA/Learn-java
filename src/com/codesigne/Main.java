@@ -1,6 +1,9 @@
 package com.codesigne;
 
+import javax.swing.*;
+import java.awt.*;
 import java.io.File;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.InputMismatchException;
@@ -77,14 +80,36 @@ public class Main {
 //        }else{
 //            System.out.println("That file doesn't exist :(");
 //        }
-        try{
-            FileWriter writer = new FileWriter("poem.txt");
-            writer.write("Roses are red\nViolets are blue \nBooty booty boot");
-            writer.append("\nadd new ine to the peom");
-            writer.close();
-        }catch(IOException e){
-            e.printStackTrace();
-        }
+//        try{
+//            FileWriter writer = new FileWriter("poem.txt");
+//            writer.write("Roses are red\nViolets are blue \nBooty booty boot");
+//            writer.append("\nadd new ine to the peom");
+//            writer.close();
+//        }catch(IOException e){
+//            e.printStackTrace();
+//        }
+
+//        try{
+//            FileReader reader = new FileReader("poem.txt");
+//            int data = reader.read();
+//            while(data != -1){
+//                System.out.print((char) data);
+//                data = reader.read();
+//            }
+//            reader.close();
+//
+//        }catch(IOException e){
+//            e.printStackTrace();
+//        }
+
+//        ***************************** Jframe ****************************
+        JFrame frame = new JFrame();
+        frame.setSize(420,420);
+        frame.setTitle("Jframe title goes here !!");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setResizable(false);
+        frame.getContentPane().setBackground(Color.red);
+        frame.setVisible(true);
 
     }
 }
