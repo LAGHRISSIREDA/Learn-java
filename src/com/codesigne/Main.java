@@ -103,13 +103,16 @@ public class Main {
 //        }
 
 //        ***************************** Jframe ****************************
-        JFrame frame = new JFrame();
-        frame.setSize(420,420);
-        frame.setTitle("Jframe title goes here !!");
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setResizable(false);
-        frame.getContentPane().setBackground(Color.red);
-        frame.setVisible(true);
+//        JFrame frame = new JFrame();
+//        frame.setSize(420,420);
+//        frame.setTitle("Jframe title goes here !!");
+//        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+//        frame.setResizable(false);
+//        frame.getContentPane().setBackground(Color.red);
+//        frame.setVisible(true);
+
+//        ********************************* enum **************************************
+        
 
     }
 }
