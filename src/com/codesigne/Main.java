@@ -112,7 +112,20 @@ public class Main {
 //        frame.setVisible(true);
 
 //        ********************************* enum **************************************
-        
+        Planet myPlanet = Planet.EARTH;
+        canILiveHere(myPlanet);
+    }
 
+    static void canILiveHere(Planet myPlanet){
+        switch (myPlanet){
+            case EARTH :
+                System.out.println("You can Live here :)");
+                System.out.println("this is Plannet number #"+myPlanet.number);
+             break;
+            default :
+                System.out.println("You can't live here .... YET");
+                System.out.println("this is Plannet number #"+myPlanet.number);
+            break;
+        }
     }
 }
